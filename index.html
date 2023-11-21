@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viss || Fashion</title>
+
+
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="landing__page">
+        <nav class="nav">
+            <h1 class="heading__text">Viss Fashions</h1>
+
+            <div id="nav_container" class="navigation__nav">
+                <button id="close" class="hamburger close">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="navigation__list">
+                    <div class="navigation__item" onclick="closeNavMenu()">
+                        <a href="#" class="navigation__link">About</a>
+                    </div>
+                    <div class="navigation__item" onclick="closeNavMenu()">
+                        <a href="#" class="navigation__link">Clothing</a>
+                    </div>
+                    <div class="navigation__item" onclick="closeNavMenu()">
+                        <a href="#" class="navigation__link">Accessories</a>
+                    </div>
+                    <div class="navigation__item" onclick="closeNavMenu()">
+                        <a href="#" class="navigation__link">Services</a>
+                    </div>
+                </div>
+                <div class="navigation__btn">
+                    <div id="open-modal" class="navigation__item" onclick="openSignUpORSignModal()">
+                        <a href="#popup" class="navigation__link--btn">Log in</a>
+                    </div>
+                    <div id="open-modal" class="navigation__item" onclick="openSignUpORSignModal()">
+                        <a href="#popup" class="navigation__link--btn btn-nav">Sign up</a>
+                    </div>
+                </div>
+            </div>
+
+            <button id="open" class="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+
+        <main>
+            <section class="section-hero">
+                <div class="section__details">
+                    <h2 class="section__heading">Trendiest Fashion ever</h2>
+                    <p class="section__description">
+                        When you are in doubt, wear a Viss Fashions Denim
+                    </p>
+                    <div class="section__btn btn">Buy now</div>
+                </div>
+                <img src="img/hero__photo.png" alt="A young man photo" class="section__photo" />
+            </section>
+        </main>
+    </div>
+
+    <section id="modal-container" class="section__popup open">
+        <div class="popup__container">
+            <div class="close-modal"><button id="close-modal">&times;</button></div>
+            <div class="popup__content">
+                <div class="popup__box">
+                    <div class="popup__box--content-left">
+                        <div>
+
+                            <img src="icon/Logo.png" alt="popup log" class="popup__icon--log">
+
+                            <p class="popup__text">Log in or sign up</p>
+                            <small class="popup__paragraph">Use your email or other serivce to continue with us</small>
+                        </div>
+                        <div>
+                            <button class="social-btn">
+                                <span class="log-3">
+                                    <img src="icon/Social media logo-3.png" alt="facebook image" class="log-3">
+                                </span>
+                                <span class="text--1">Continue with Facebook</span>
+                            </button>
+                            <button class="social-btn">
+                                <span class="log-3">
+                                    <img src="icon/Social media logo-2.png" alt="facebook image" class="log-3">
+                                </span>
+                                <span class="text--1">Continue with Google</span>
+                            </button>
+                            <button class="social-btn">
+                                <span class="log-3">
+                                    <img src="icon/Social media logo.png" alt="facebook image" class="log-3">
+                                </span>
+                                <span class="text--1">Continue with Apple</span>
+                            </button>
+                            <button class="social-btn">
+                                <span class="log-3">
+                                    <img src="icon/Social media logo-1.png" alt="facebook image" class="log-3">
+                                </span>
+                                <span class="text--1">Continue with Twitter</span>
+                            </button>
+                            <button class="social-btn">
+                                <span class="log-3">
+                                    <img src="icon/Icons-1.png" alt="facebook image" class="log-3">
+                                </span>
+                                <span class="text--1">Continue with email</span>
+                            </button>
+                            <button class="social-btn">
+                                <span class="log-3">
+                                    <img src="icon/Vector.png" alt="facebook image" class="log-3">
+                                </span>
+                                <span class="text--1">Continue with phone</span>
+                            </button>
+
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="popup__box--content-right">
+
+                        <img src="img/log__photo.png" alt="popup image" class="popup__img">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
